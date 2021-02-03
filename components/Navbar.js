@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
@@ -6,9 +7,9 @@ const Navbar = () => {
       <div className='logo'>
         <h1>Ninja List</h1>
       </div>
-      <a>Home</a>
-      <a>About</a>
-      <a>Ninja List</a>
+      <Link href='/'>Home</Link>
+      <Link href='/about'>About</Link>
+      <Link href='/ninjas'>Ninja List</Link>
     </nav>
   );
 };

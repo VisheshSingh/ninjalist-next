@@ -1,8 +1,11 @@
 import React from 'react';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 const about = () => {
   return (
     <div>
+      <Navbar />
       <h1>About Page</h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi soluta
@@ -14,6 +17,7 @@ const about = () => {
         quia impedit iure non amet excepturi aperiam voluptatum vero? Tenetur
         magni nulla commodi provident soluta unde tempora expedita hic alias?
       </p>
+      <Footer />
     </div>
   );
 };
