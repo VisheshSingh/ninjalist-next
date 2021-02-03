@@ -1,20 +1,23 @@
 import Link from 'next/link';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
     <div>
-      <h1>Homepage</h1>
-      <p>
+      <h1 className={styles.title}>Homepage</h1>
+      <p className={styles.text}>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi soluta
         eos sed architecto dolorem possimus voluptatum, tenetur beatae
         asperiores exercitationem.
       </p>
-      <p>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe aliquam
         quia impedit iure non amet excepturi aperiam voluptatum vero? Tenetur
         magni nulla commodi provident soluta unde tempora expedita hic alias?
       </p>
-      <Link href='/ninjas'>Ninja List</Link>
+      <Link href='/ninjas'>
+        <a className={styles.btn}>Ninja List</a>
+      </Link>
     </div>
   );
 }
