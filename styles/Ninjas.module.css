@@ -1,0 +1,15 @@
+.single {
+  display: block;
+  margin: 20px 10px;
+  padding: 2px 16px;
+  border-radius: 8px;
+  background: #fff;
+  border-left: 8px solid #fff;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.single:hover {
+  border-left: 8px solid #234;
+  transform: translateX(-10px);
+}
